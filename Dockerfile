@@ -10,7 +10,8 @@ COPY target/boot-project-0.0.1-SNAPSHOT.jar app.jar
 #ENTRYPOINT exec java $JAVA_OPTS -Djava.security.egd=file:/dev/./urandom -jar bootproject.jar
 
 # ENV DB_URL=dbc:mysql://mysql-clusterip-svc:23307/mydb
-ENV DB_URL=dbc:mysql://mysql-svc:23306/mydb
+# ENV DB_URL=dbc:mysql://mysql-svc:23306/mydb
+ENV DB_URL=dbc:mysql://192.168.100.221:23306/mydb
 ENV DB_USER=user
 ENV DB_PASS=mysql
 ENV DB_DRIVER=com.mysql.cj.jdbc.Driver
