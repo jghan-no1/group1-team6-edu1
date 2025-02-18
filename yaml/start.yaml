@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: springboot-app
-        image: k8s-vga-worker1:5000/group1-team6-edu01:v0.5
+        image: k8s-vga-worker1:5000/group1-team6-edu01:v0.6
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
