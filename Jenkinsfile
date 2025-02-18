@@ -11,6 +11,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
+                sh 'java -version'
+                sh 'mvn -version'
                 // Git 저장소에서 소스 코드 체크아웃 (branch 지정 : 본인 repository의 branch 이름으로 설정)
                 git branch: 'main', url: 'https://github.com/jghan-no1/group1-team6-edu1.git'
             }
