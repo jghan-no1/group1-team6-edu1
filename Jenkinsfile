@@ -41,7 +41,7 @@ pipeline {
         stage('Make Deployment and Service') {
             steps {
                 script {
-                    sh "kubectl apply -f ./yaml/start.yaml -n ${NAMESPACE}"
+                    sh "kubectl apply -f yaml/start.yaml"
                 }
             }
         }
